@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>QUIZ-UYGULAMASI</title>
+  </head>
+  <body>
+    <div id="quizApp">
+      <h1 id="header" style="display: none">10 Soruluk Başarı Testi</h1>
+      <button id="startButton">TESTİ BAŞLAT</button>
+      <div id="quizContainer" style="display: none">
+        <h1 id="questionNumber"></h1>
+        <div id="questionContainer"></div>
+        <div id="answersListContainer">
+          <ul id="answersList"></ul>
+        </div>
+      </div>
+      <div id="buttons" style="display: none">
+        <button class="buttonClass" id="previousButton">Geri</button>
+        <button class="buttonClass" id="nextButton">İleri</button>
+        <button class="buttonClass" id="resetButton">Baştan Başla</button>
+      </div>
+    </div>
+   
+    <script src="./script.js"></script>
+  </body>
+</html>

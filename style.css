@@ -1,0 +1,209 @@
+/* Kodlar ChatGBT ve (Selman Beyden kopyalandı-uyarlandı)*/
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+body {
+  background-color: rgb(152, 156, 152);
+}
+#quizApp {
+  border: none;
+  box-shadow: 5px 5px 5px 5px rgb(3, 95, 57);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55em;
+  height: 40em;
+  min-height: 40em;
+  min-width: 55em;
+  padding-bottom: 2em;
+  margin: auto;
+  border-radius: 35px;
+  background-image: url(/5624859.jpg);
+  background-size: cover;
+  background-position: 1px;
+  background-color: white;
+  margin-top: 2em;
+  box-decoration-break: slice;
+}
+
+#quizContainer {
+  box-shadow: 2px 2px #8cb9ea;
+  width: 45em;
+  height: 25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 30px;
+  border-radius: 45px;
+  background-color: #7aa8da;
+}
+
+.buttonClass {
+  margin: auto;
+  padding: 10px 20px;
+  margin-top: 2em;
+  font-size: 15px;
+  width: 8em;
+  height: 3em;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  background-color: #007bff;
+  cursor: pointer;
+  font-family: "Righteous", sans-serif;
+}
+
+.buttonClass:hover {
+  background-color: #0069d9;
+  transform: scale(1.06);
+}
+
+#answersListContainer {
+  width: 80%;
+}
+
+#questionContainer {
+  width: 23em;
+  height: 3em;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 30px;
+
+  background-color: rgb(215, 144, 90);
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 2px rgb(208, 196, 196);
+  font-family: "Righteous", sans-serif;
+}
+
+#answersList {
+  width: 39.5em;
+  height: 11em;
+  margin-top: 2em;
+  margin-left: -3.5em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgb(208, 196, 196);
+  padding: 0 30px;
+  row-gap: 14px;
+  column-gap: -2px;
+  border-radius: 55px;
+}
+
+li {
+  padding-top: 10px;
+  box-sizing: border-box;
+  background-color: rgba(88, 195, 176, 0.666);
+  box-shadow: 1px 1px 1px 1px rgb(208, 196, 196);
+  cursor: pointer;
+  font-size: 25px;
+  border-radius: 20px;
+  list-style-type: none;
+  text-align: center;
+  margin: auto;
+  height: 2em;
+  width: 9.5em;
+
+  font-family: "Righteous", sans-serif;
+}
+
+li:hover {
+  background-color: #0069d9;
+  transform: scale(1.07);
+  color: white;
+}
+
+.selected-answer {
+  background-color: aqua;
+}
+
+#dynamicResultsButton {
+  width: 19em;
+  height: 35em;
+  border-radius: 35px;
+  text-align: center;
+  background-size: cover;
+  cursor: pointer;
+  padding-top: 0.2em;
+  font-size: 40px;
+  font-family: "Permanent Marker", cursive;
+  color: rgb(128, 0, 0);
+  font-weight: bolder;
+  margin-top: -0.2em;
+  margin-bottom: -0.2em;
+   background-image: url('/düşünceli.png');
+}
+
+
+
+h1 {
+  font-size: 30px;
+  margin-top: -5px;
+  border-radius: 35px;
+
+  background-color: white;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 2px 2px 2px 2px rgb(208, 196, 196);
+  font-family: "Righteous", sans-serif;
+}
+
+.result-card {
+  /* Uygun bir yükseklik */
+  background-size: cover;
+  background-position: center;
+  background-color: aqua;
+  width: 47em;
+  height: 53em;
+  border-radius: 35px;
+}
+
+.result-card p {
+  text-align: center;
+  padding-top: 1.05em;
+  font-size: 65px;
+  font-weight: bolder;
+  width: 3em;
+  height: 2em;
+  background-color: white;
+  margin: auto;
+  margin-top: 1.8em;
+  border-radius: 50%;
+  color: blue;
+  font-family: "Righteous", sans-serif;
+}
+
+@media (max-width: 600px) {
+  /* Mobil cihazlar için stiller */
+  .result-card {
+    font-size: 14px;
+  }
+  /* Diğer mobil uyumlu stiller */
+}
+
+#header {
+  margin-top: 80px;
+  background-color: #ab49d1a9;
+}
+
+#startButton {
+  margin: auto;
+  width: 8em;
+  height: 3em;
+  border-radius: 180px;
+  cursor: pointer;
+  box-shadow: 2px 2px rgb(60, 60, 141);
+  background-color: #0069d9;
+  font-family: "Righteous", sans-serif;
+  color: white;
+  border: none;
+  font-size: 35px;
+}
+
+#startButton:hover {
+  transform: scale(1.1);
+  background-color: #007bff;
+  color: white;
+}
